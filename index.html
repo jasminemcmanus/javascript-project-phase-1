@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My JavaScript App</title>
+    <title>Random Read Recommender</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
   </head>
   <body>
     <header>
-        <h1>Hello!</h1>
+        <h1>You should read...</h1>
     </header>
+    <main>
+
+      <div class="form-container">
+        <form id="book-filter-form">
+          <br>
+          <label for="genre">What is your favourite genre?</label>
+          <input id="genre" type="text" placeholder="e.g. fantasy">
+          <br>
+          <input type="submit" value="Get Recommendations">
+        </form>
+      </div>
+      
+      <div id="book-container">
+        <div id="book-display" class="clearfix">
+          <img src="">
+          <div>
+            <h2></h2>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="button-container">
+        <button class="button primary" onclick="displayGoogleBook()">Get A Random Book</button>
+        <p>OR</p>
+        <button class="button secondary" onclick="displayForm()">Choose A Genre</button>
+      </div>
+      
+
+    </main>
   </body>
 </html>
