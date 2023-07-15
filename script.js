@@ -100,7 +100,6 @@ function handleErrors() {
     alertBox.style.display = 'block';
 }
 
-
 let closeButton = document.querySelector('span.close-button');
     closeButton.addEventListener('click', (closeFunction))
 
