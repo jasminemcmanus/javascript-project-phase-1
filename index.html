@@ -20,7 +20,20 @@
           <input type="submit" value="Get Recommendations">
         </form>
       </div>
+
+      <div class="alert-container">
+        <div class="alert">
+          <span class="close-button">&times;</span>
+          <br>
+          <p>We couldn't find any books with that genre.</p>
+          <p>Please try again.</p>
+        </div>
+      </div>
       
+      <div id="genre-display">
+        <p>Selected genre: <span id="selected-genre"></span></p>
+      </div>
+
       <div id="book-container">
         <div id="book-display" class="clearfix">
           <img src="">
@@ -34,12 +47,11 @@
 
       
       <div class="button-container">
-        <button class="button primary" onclick="displayGoogleBook()">Get A Random Book</button>
+        <button class="button primary" id="random">Get A Random Book</button>
         <p>OR</p>
-        <button class="button secondary" onclick="displayForm()">Choose A Genre</button>
+        <button class="button secondary">Choose A Genre</button>
       </div>
       
-
     </main>
   </body>
 </html>

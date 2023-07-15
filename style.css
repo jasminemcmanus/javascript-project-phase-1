@@ -168,3 +168,54 @@ input[type=submit]:hover {
 	height: 0;
     line-height: 0;
 }
+
+/* genre display */
+
+#genre-display {
+    display: none;
+    margin: 0 20px;
+}
+
+#genre-display * {
+    text-align: center;
+    color: #c5a17f;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* error alert box */
+
+.alert-container {
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+.alert {
+    margin: 0 auto;
+    width: 50%;
+    padding: 40px;
+    background-color: #7a3f34;
+    color: #c6b18f;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 5px;
+    color: #c6b18f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #191917;
+}
